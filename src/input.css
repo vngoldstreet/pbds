@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-logo {
+    height: 3.5rem !important;
+}
+
+#hs-modal-signin, #hs-modal-signup a {
+    cursor: pointer;
+}
+
+#animatedInput {
+    display: none;
+}

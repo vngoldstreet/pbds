@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{.head.Title}}</title>
+
+    <link rel="shortcut icon" type="image/png" href={{.head.Favicon}} />
+    <meta name="description" content={{.head.Description}}>
+    <meta name="keywords" content={{.head.Description}}>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={{.head.Title}}>
+    <meta property="og:description" content={{.head.Description}}>
+    <meta property="author" content={{.head.Author}}>
+    <meta property="generator" content={{.head.Author}}>
+    <meta property="og:url" content={{.head.Author}}{{.head.Url}}>
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:image" content={{.head.Image}}>
+    <meta property="og:image:alt" content={{.head.Title}}>
+
+    <meta name="twitter:site" content={{.head.Author}}>
+    <meta name="twitter:creator" content={{.head.Author}}>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={{.head.Title}}>
+    <meta name="twitter:description" content={{.head.Description}}>
+    <meta name="twitter:image" content={{.head.Image}}>
+
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="../node_modules/preline/dist/preline.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    {{template "tpl_header.html" .}}
+    {{template "tpl_search.html" .}}
+    {{template "tpl_fast_news.html" .}}
+    {{template "tpl_breaking_news.html" .}}
+    {{template "tpl_news.html" .}}
+    {{template "tpl_popular_news.html" .}}
+    {{template "tpl_footer.html" .}}
+</body>
+
+</html>
