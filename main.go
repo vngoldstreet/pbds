@@ -23,6 +23,7 @@ func main() {
 	{
 		r.GET("/", getHomepage)
 		r.GET("/tin-tuc", getNews)
+		r.GET("/fxc", getFXC)
 	}
 	r.Run(":4200")
 }
